@@ -8,7 +8,8 @@ let books_storage = [
   { id: 2, title: 'Half Girlfriend', author: 'Chetan Bhagat' }
 ];
 
-router.get('/', function(req, res) {
+router.get('/', function (req, res) {
+  console.log("Here");
   res.json({ books: books_storage });
 });
 
